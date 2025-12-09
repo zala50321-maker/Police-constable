@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gujarat Police Recruitment 2025 - Official Alert</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        policeNavy: '#002147',
+                        policeKhaki: '#C5A16F',
+                        alertRed: '#FF3333',
+                        policeBlueLight: '#0a3366',
+                    },
+                    fontFamily: {
+                        sans: ['Poppins', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Custom Glassmorphism Class */
+        .glass {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+        }
+        
+        /* Animated Background Gradient */
+        body {
+            background: linear-gradient(-45deg, #002147, #0a3366, #3b1d00, #002147);
+            background-size: 400% 400%;
+            animation: gradientBG 15s ease infinite;
+            color: white;
+            overflow-x: hidden;
+        }
+
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        /* Typing Cursor */
+        .cursor {
+            display: inline-block;
+            width: 3px;
+            background-color: #C5A16F;
+            margin-left: 5px;
+            animation: blink 1s infinite;
+        }
+        @keyframes blink { 50% { opacity: 0; } }
+
+        /* Pulsating Button */
+        .pulse-button {
+            box-shadow: 0 0 0 0 rgba(255, 51, 51, 0.7);
+            animation: pulse 1.5s infinite cubic-bezier(0.66, 0, 0, 1);
+        }
+        @keyframes pulse {
+            to { box-shadow: 0 0 0 20px rgba(255, 51, 51, 0); }
+        }
+
+        /* Timeline styles */
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -24px;
+            top: 0;
+            height: 100%;
+            width: 4px;
+            background: rgba(197, 161, 111, 0.3); /* Khaki transparent */
+        }
+        .timeline-item::after {
+            content: '';
+            position: absolute;
+            left: -32px;
+            top: 20px;
+            height: 20px;
+            width: 20px;
+            border-radius: 50%;
+            background: #C5A16F;
+            border: 3px solid #002147;
+        }
+        
+        /* Hide scrollbar for neatness */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #002147; }
+        ::-webkit-scrollbar-thumb { background: #C5A16F; border-radius: 10px; }
+    </style>
+</head>
+<body class="antialiased">
+
+    <header class="min-h-screen flex flex-col justify-center items-center relative px-4 overflow-hidden">
+        <div class="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(255,51,51,0.1),transparent_50%)] animate-pulse"></div>
+        <div class="absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,rgba(0,33,71,0.4),transparent_50%)]"></div>
+
+        <div class="relative z-10 text-center max-w-4xl mt-[-5vh]">
+            <div class="inline-block px-4 py-1 mb-4 bg-alertRed rounded-full text-sm font-bold tracking-wider animate-bounce">
+                🚨 BIGGEST BREAKING NEWS: ગુજરાત પોલીસમાં ઐતિહાસિક ભરતી!
+            </div>
+            <h1 class="text-5xl md:text-7xl font-black mb-4 leading-tight tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-white via-policeKhaki to-white drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)]">
+                SERVE THE NATION <br>
+                <span class="text-3xl md:text-5xl text-white">JOIN GUJARAT POLICE</span>
+            </h1>
+            
+            <div class="text-2xl md:text-3xl font-semibold text-policeKhaki mb-8 h-12">
+                <span id="typing-text"></span><span class="cursor"></span>
+            </div>
+
+            <p class="text-lg md:text-xl text-gray-300 mb-10 max-w-2xl mx-auto">
+                ખેડૂતપુત્ર હો કે મધ્યમવર્ગીય પરિવાર, સરકારી નોકરી અને શરીર પર વર્દી મેળવવાનું સપનું પૂરું કરવાની આ છેલ્લી અને શ્રેષ્ઠ તક છે!
+            </p>
+
+            <a href="#apply-section" class="pulse-button bg-gradient-to-r from-alertRed to-orange-600 text-white font-bold text-xl px-10 py-4 rounded-full hover:from-orange-600 hover:to-alertRed transition-all duration-300 transform hover:-translate-y-1 inline-flex items-center">
+                <i class="fab fa-whatsapp mr-2 text-2xl"></i> APPLY NOW (ફોર્મ ભરાવો)
+            </a>
+        </div>
+        
+        <div class="absolute bottom-10 animate-bounce">
+            <i class="fas fa-chevron-down text-policeKhaki text-3xl"></i>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-16 relative z-10">
+
+        <section id="highlights" class="gsap-section mb-24">
+            <h2 class="text-4xl font-bold text-center mb-12"><span class="text-policeKhaki">Golden</span> Opportunity Details</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="glass p-8 rounded-2xl text-center group hover:bg-gradient-to-br hover:from-policeNavy hover:to-policeBlueLight transition-all duration-500 transform hover:scale-105 hover:-translate-y-2">
+                    <div class="text-6xl text-alertRed mb-4 group-hover:animate-pulse"><i class="fas fa-fire"></i></div>
+                    <h3 class="text-2xl font-bold mb-2">Total Vacancies</h3>
+                    <p class="text-5xl font-black text-white tracking-wider">13,591</p>
+                    <p class="text-gray-300 mt-2">આવો મોકો ફરી નહીં મળે!</p>
+                </div>
+
+                <div class="glass p-8 rounded-2xl text-center group hover:bg-gradient-to-br hover:from-policeKhaki/20 hover:to-policeNavy transition-all duration-500 transform hover:scale-105 hover:-translate-y-2">
+                    <div class="text-6xl text-policeKhaki mb-4"><i class="fas fa-graduation-cap"></i></div>
+                    <h3 class="text-2xl font-bold mb-2">Qualification</h3>
+                    <div class="text-left inline-block mt-2">
+                         <p class="text-xl text-white"><i class="fas fa-check text-green-400 mr-2"></i> 12th Pass (LRD)</p>
+                         <p class="text-xl text-white"><i class="fas fa-check text-green-400 mr-2"></i> Graduate (PSI)</p>
+                    </div>
+                </div>
+
+                 <div class="glass p-8 rounded-2xl text-center group hover:bg-gradient-to-br hover:from-policeBlueLight hover:to-policeKhaki/30 transition-all duration-500 transform hover:scale-105 hover:-translate-y-2">
+                    <div class="text-6xl text-white mb-4"><i class="fas fa-user-clock"></i></div>
+                    <h3 class="text-2xl font-bold mb-2">Age Limit</h3>
+                     <div class="text-left inline-block mt-2">
+                        <p class="text-xl text-white"><span class="font-bold text-policeKhaki">LRD:</span> 18 - 33 Years</p>
+                        <p class="text-xl text-white"><span class="font-bold text-policeKhaki">PSI:</span> 21 - 35 Years</p>
+                        <p class="text-sm text-gray-400 mt-1">(+ કેટેગરી મુજબ છૂટછાટ)</p>
+                   </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="gsap-section mb-24">
+             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <div class="glass p-8 rounded-2xl">
+                    <h3 class="text-3xl font-bold mb-6 flex items-center"><i class="fas fa-list-alt mr-3 text-policeKhaki"></i> Vacancy Breakdown</h3>
+                    
+                    <div class="mb-8">
+                        <h4 class="text-xl font-bold text-policeKhaki mb-3">✅ (1) ધોરણ 12 પાસ (LRD)</h4>
+                        <ul class="space-y-3">
+                            <li class="flex justify-between p-3 bg-policeNavy/50 rounded-lg border-l-4 border-alertRed">
+                                <span>બિન હથિયારી કોન્સ્ટેબલ</span>
+                                <span class="font-bold">6,942 (Best Post)</span>
+                            </li>
+                            <li class="flex justify-between p-3 bg-policeNavy/50 rounded-lg border-l-4 border-policeKhaki">
+                                <span>હથિયારી કોન્સ્ટેબલ</span>
+                                <span class="font-bold">2,458</span>
+                            </li>
+                            <li class="flex justify-between p-3 bg-policeNavy/50 rounded-lg border-l-4 border-policeKhaki">
+                                <span>SRPF (એસ.આર.પી.એફ)</span>
+                                <span class="font-bold">3,002</span>
+                            </li>
+                            <li class="flex justify-between p-3 bg-policeNavy/50 rounded-lg border-l-4 border-policeKhaki">
+                                <span>જેલ સિપોઈ (M/F)</span>
+                                <span class="font-bold">331</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-xl font-bold text-policeKhaki mb-3">✅ (2) ગ્રેજ્યુએટ (PSI કેડર)</h4>
+                        <ul class="space-y-3">
+                            <li class="flex justify-between p-3 bg-policeNavy/50 rounded-lg border-l-4 border-policeKhaki">
+                                <span>બિન હથિયારી PSI</span>
+                                <span class="font-bold">659</span>
+                            </li>
+                            <li class="flex justify-between p-3 bg-policeNavy/50 rounded-lg border-l-4 border-policeKhaki">
+                                <span>હથિયારી PSI (Platoon Cmdr)</span>
+                                <span class="font-bold">129</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="glass p-8 rounded-2xl">
+                    <h3 class="text-3xl font-bold mb-6 flex items-center"><i class="fas fa-running mr-3 text-alertRed"></i> Physical Standards</h3>
+                    <p class="mb-6 text-gray-300">તમારી ઊંચાઈ આટલી હોવી જોઈએ તો જ ફોર્મ ભરવું (SC/ST માટે છૂટછાટ).</p>
+
+                    <div class="grid grid-cols-2 gap-6 mb-10">
+                        <div class="text-center group cursor-pointer">
+                            <i class="fas fa-male text-6xl text-blue-400 group-hover:scale-110 transition-transform"></i>
+                            <h4 class="text-xl font-bold mt-2">Male Height</h4>
+                            <div class="text-3xl font-black text-white mt-2 bg-policeNavy/80 p-2 rounded-lg group-hover:bg-policeKhaki/80 transition-colors">
+                                165 cm
+                                <span class="block text-sm font-normal text-gray-300">(SC/ST: 162 cm)</span>
+                            </div>
+                        </div>
+                        <div class="text-center group cursor-pointer">
+                            <i class="fas fa-female text-6xl text-pink-400 group-hover:scale-110 transition-transform"></i>
+                            <h4 class="text-xl font-bold mt-2">Female Height</h4>
+                            <div class="text-3xl font-black text-white mt-2 bg-policeNavy/80 p-2 rounded-lg group-hover:bg-policeKhaki/80 transition-colors">
+                                155 cm
+                                <span class="block text-sm font-normal text-gray-300">(SC/ST: 150 cm)</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h4 class="text-xl font-bold mb-4 flex items-center">Running Endurance (Visuals)</h4>
+                    <div class="space-y-6">
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="text-sm font-medium text-policeKhaki"><i class="fas fa-stopwatch mr-1"></i> Male Running Target (Eg: 5km)</span>
+                                <span class="text-sm font-medium text-white">25 Mins (Qualify)</span>
+                            </div>
+                            <div class="w-full bg-gray-700 rounded-full h-4 overflow-hidden glass">
+                                <div class="bg-gradient-to-r from-green-500 to-policeKhaki h-4 rounded-full" style="width: 85%; animation: loadBar 2s ease-out forwards;"></div>
+                            </div>
+                        </div>
+                        <div>
+                             <div class="flex justify-between mb-1">
+                                <span class="text-sm font-medium text-policeKhaki"><i class="fas fa-stopwatch mr-1"></i> Female Running Target (Eg: 1600m)</span>
+                                <span class="text-sm font-medium text-white">9 Mins 30 Sec (Qualify)</span>
+                            </div>
+                            <div class="w-full bg-gray-700 rounded-full h-4 overflow-hidden glass">
+                                <div class="bg-gradient-to-r from-pink-500 to-purple-500 h-4 rounded-full" style="width: 75%; animation: loadBar 2.5s ease-out forwards;"></div>
+                            </div>
+                        </div>
+                    </div>
+                     <p class="text-xs text-gray-400 mt-2 text-right">*Running times are indicative visuals.</p>
+                </div>
+             </div>
+        </section>
+
+        <section class="gsap-section mb-24">
+            <h2 class="text-4xl font-bold text-center mb-12">Steps to <span class="text-policeKhaki">Uniform</span></h2>
+
+            <div class="glass p-6 rounded-xl mb-12 flex flex-col md:flex-row justify-around items-center text-center border-2 border-alertRed/50 relative overflow-hidden">
+                 <div class="absolute inset-0 bg-alertRed/10 animate-pulse -z-10"></div>
+                <div class="mb-4 md:mb-0">
+                    <h4 class="text-xl text-gray-300">Form Starting Date</h4>
+                    <p class="text-3xl font-bold text-white"><i class="far fa-calendar-alt mr-2"></i> 03/12/2025</p>
+                </div>
+                <div class="text-4xl text-policeKhaki hidden md:block"><i class="fas fa-arrow-right"></i></div>
+                <div>
+                    <h4 class="text-xl text-alertRed font-bold">Last Date (ચેતવણી!)</h4>
+                    <p class="text-3xl font-bold text-white"><i class="far fa-calendar-times mr-2"></i> 23/12/2025</p>
+                    <p class="text-sm text-alertRed mt-1 font-semibold">વેબસાઈટ હેંગ થાય તે પહેલા ભરો!</p>
+                </div>
+            </div>
+
+            <div class="relative max-w-3xl mx-auto pl-8">
+                <div class="timeline-item relative mb-12 gsap-slide-left glass p-6 rounded-xl ml-6">
+                    <h3 class="text-2xl font-bold text-policeKhaki mb-2">Step 1: Registration & Form Filling</h3>
+                    <p class="mb-4">સૌથી મહત્વપૂર્ણ સ્ટેપ. PDF મુજબ 15 KB સાઈઝમાં ફોટો/સહી સેટ કરવાના છે. ભૂલ થશે તો સીધું રિજેક્શન આવશે!</p>
+                    <div class="bg-policeNavy/60 p-4 rounded-lg border border-policeKhaki/30">
+                        <h5 class="font-bold text-white mb-2"><i class="fas fa-rupee-sign text-green-400 mr-2"></i> સરકારી પરીક્ષા ફી (General Only):</h5>
+                         <p>PSI: ₹100 | LRD: ₹100 | Both: ₹200</p>
+                         <p class="text-sm text-gray-300">(SC, ST, SEBC, EWS, Ex-Army માટે ફી નથી)</p>
+                    </div>
+                </div>
+                 <div class="timeline-item relative mb-12 gsap-slide-right glass p-6 rounded-xl ml-6">
+                    <h3 class="text-2xl font-bold text-policeKhaki mb-2">Step 2: Written Examination</h3>
+                    <p>તમારી મહેનત બતાવવાનો સમય. OMR આધારિત પરીક્ષા લેવામાં આવશે.</p>
+                    <i class="fas fa-pen-alt text-4xl text-white/20 absolute right-4 bottom-4"></i>
+                </div>
+                <div class="timeline-item relative mb-12 gsap-slide-left glass p-6 rounded-xl ml-6">
+                    <h3 class="text-2xl font-bold text-policeKhaki mb-2">Step 3: Physical Test (PET/PST)</h3>
+                    <p>દોડ અને શારીરિક માપદંડ. આમાં પાસ થવું ફરજીયાત છે.</p>
+                     <i class="fas fa-running text-4xl text-white/20 absolute right-4 bottom-4"></i>
+                </div>
+                 <div class="timeline-item relative mb-12 gsap-slide-right glass p-6 rounded-xl ml-6 bg-gradient-to-r from-policeKhaki/20 to-transparent">
+                    <h3 class="text-2xl font-bold text-white mb-2">Step 4: Final Selection</h3>
+                    <p class="font-bold text-xl text-policeKhaki">શરીર પર વર્દી અને દેશ સેવા! 🇮🇳</p>
+                     <i class="fas fa-flag-checkered text-4xl text-policeKhaki absolute right-4 bottom-4"></i>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="apply-section" class="relative z-10 bg-policeNavy/90 pt-16 pb-8 px-4 border-t-4 border-policeKhaki">
+        <div class="container mx-auto max-w-4xl text-center">
+            <h2 class="text-4xl font-black mb-6 text-white">⚠️ FORM REJECTION થી બચો!</h2>
+            <p class="text-xl mb-8 text-gray-300 leading-relaxed">
+                તમારી મહેનત પાણીમાં ન જાય તે માટે અમે <span class="text-policeKhaki font-bold">પ્રોફેશનલ સોફ્ટવેરથી</span> ફોટો રિ-સાઈઝ કરીને ચોકસાઈપૂર્વક ફોર્મ ભરીશું. <br>ઘરે બેઠા 100% ગેરંટી સાથે.
+            </p>
+            
+            <div class="glass p-8 rounded-3xl inline-block mb-10 border-2 border-green-500/50 shadow-[0_0_30px_rgba(34,197,94,0.3)]">
+                 <h3 class="text-2xl font-bold mb-4">🚀 અત્યારે જ ફોર્મ ભરાવવા માટે:</h3>
+                 <p class="text-lg mb-6">તમારો કિંમતી સમય બગાડ્યા વગર, આજે જ અમને ડોક્યુમેન્ટ મોકલો.</p>
+                 
+                 <div class="flex flex-col md:flex-row justify-center items-center gap-6">
+                    <div class="text-center px-6 py-3 bg-white/10 rounded-xl">
+                        <p class="text-sm text-policeKhaki">અમારો સર્વિસ ચાર્જ</p>
+                        <p class="text-3xl font-black">માત્ર ₹100/- <span class="text-sm">(એક ફોર્મ)</span></p>
+                    </div>
+                    
+                    <a href="https://wa.me/919714079656?text=POLICE%20FORM%20ભરવું%20છે." target="_blank" class="pulse-button flex items-center bg-[#25D366] hover:bg-[#1ebe57] text-white font-bold text-2xl px-10 py-5 rounded-full transition-all transform hover:scale-105 shadow-lg">
+                        <i class="fab fa-whatsapp text-4xl mr-3"></i>
+                        <div>
+                            <span class="block text-sm font-normal text-left">Click to Chat</span>
+                            9714079656
+                        </div>
+                    </a>
+                 </div>
+                 <p class="mt-6 text-sm text-gray-400">Link પર ક્લિક કરો અથવા નંબર સેવ કરી "POLICE FORM" લખીને મેસેજ કરો.</p>
+            </div>
+
+            <div class="mt-12 pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center text-gray-400 text-sm">
+                <p>© 2025 Gujarat Police Recruitment Helpdesk. Not an official government website.</p>
+                <div class="flex space-x-6 mt-4 md:mt-0">
+                    <a href="#" class="hover:text-policeKhaki transition-colors"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="hover:text-policeKhaki transition-colors"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="hover:text-policeKhaki transition-colors"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+             <p class="text-center mt-8 text-policeKhaki font-bold animate-pulse">🇮🇳 તમારા ગ્રુપમાં જે પણ મિત્રો પોલીસની તૈયારી કરે છે તેમને આ મેસેજ ફોરવર્ડ કરો. 🇮🇳</p>
+        </div>
+    </footer>
+
+    <script>
+        // --- 1. Typing Effect ---
+        const typingTextElement = document.getElementById('typing-text');
+        const words = ["Courage", "Loyalty", "Honor", "શૌર્ય", "નિષ્ઠા", "સન્માન"];
+        let wordIndex = 0;
+        let charIndex = 0;
+        let isDeleting = false;
+        let typeSpeed = 100;
+
+        function type() {
+            const currentWord = words[wordIndex];
+            
+            if (isDeleting) {
+                typingTextElement.textContent = currentWord.substring(0, charIndex - 1);
+                charIndex--;
+                typeSpeed = 50; // Faster deleting
+            } else {
+                typingTextElement.textContent = currentWord.substring(0, charIndex + 1);
+                charIndex++;
+                typeSpeed = 150; // Slower typing
+            }
+
+            if (!isDeleting && charIndex === currentWord.length) {
+                isDeleting = true;
+                typeSpeed = 2000; // Pause at end of word
+            } else if (isDeleting && charIndex === 0) {
+                isDeleting = false;
+                wordIndex = (wordIndex + 1) % words.length;
+                typeSpeed = 500; // Pause before next word
+            }
+
+            setTimeout(type, typeSpeed);
+        }
+
+        // Start typing effect
+        document.addEventListener('DOMContentLoaded', () => setTimeout(type, 1000));
+
+
+        // --- 2. GSAP Scroll Animations ---
+        gsap.registerPlugin(ScrollTrigger);
+
+        // General Fade Up for main sections
+        gsap.utils.toArray('.gsap-section').forEach(section => {
+            gsap.from(section, {
+                opacity: 0,
+                y: 50,
+                duration: 1,
+                ease: "power3.out",
+                scrollTrigger: {
+                    trigger: section,
+                    start: "top 80%", // trigger when top of section hits 80% viewport height
+                    toggleActions: "play none none reverse"
+                }
+            });
+        });
+
+        // Timeline Items - Slide In from Left
+        gsap.utils.toArray('.gsap-slide-left').forEach(item => {
+            gsap.from(item, {
+                opacity: 0,
+                x: -100,
+                duration: 1,
+                ease: "power4.out",
+                scrollTrigger: {
+                    trigger: item,
+                    start: "top 85%",
+                }
+            });
+        });
+
+        // Timeline Items - Slide In from Right
+        gsap.utils.toArray('.gsap-slide-right').forEach(item => {
+            gsap.from(item, {
+                opacity: 0,
+                x: 100,
+                duration: 1,
+                ease: "power4.out",
+                scrollTrigger: {
+                    trigger: item,
+                    start: "top 85%",
+                }
+            });
+        });
+
+        // Progress Bar Loading Animation Keyframes added in CSS style block via JS for simplicity in single file
+        const style = document.createElement('style');
+        style.innerHTML = `
+            @keyframes loadBar {
+                from { width: 0; }
+            }
+        `;
+        document.head.appendChild(style);
+
+    </script>
+</body>
+</html>
